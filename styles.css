@@ -1,0 +1,436 @@
+:root {
+  --background-color: #040b14;
+  --title1: white;
+  --title2: rgb(175, 233, 228);
+  --title3: #bfa181;
+  --title4: #178582;
+}
+
+body {
+  background-color: var(--background-color);
+}
+html{
+  scroll-behavior: smooth;
+}
+
+#landing-page {
+  padding: 7rem 0rem 8rem 0rem;
+  justify-content: center;
+  text-align: center;
+  color: var(--title1);
+}
+.image img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  justify-content: center;
+}
+.heading {
+  color: var(--title1);
+  font-size: 2.4rem;
+}
+.skills {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+#landing-page {
+  background-image: url(https://img.freepik.com/free-vector/gradient-dark-dynamic-lines-background_23-2148995950.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1707091200&semt=aishttps://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-52393.jpg);
+  background-size: cover;
+}
+.skills h4 {
+  padding: 0rem 0.4rem;
+}
+.social-links {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links i {
+  padding: 0rem 1rem;
+}
+.social-links i:hover {
+  color: var(--title3);
+  transform: translateY(-5px);
+}
+#about {
+  /* background-color: white; */
+  padding: 3rem 2rem 4rem 2rem;
+  justify-content: center;
+  color: var(--title3);
+}
+.title {
+  text-align: center;
+  color: var(--title3);
+}
+.title h3 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.about-container {
+  display: flex;
+}
+.about-content {
+  /* color:var(--title1); */
+  border: 1px solid var(--title2);
+  border-radius: 10px;
+  background-color: #0a1625;
+  color: var(--title1);
+  padding: 2rem 1.4rem;
+  /* margin:0rem 1rem ; */
+  font-family: "Nunito Sans", sans-serif;
+}
+/* .container{
+    padding:1rem ;
+} */
+/* .header {
+  background-color: #01060e;
+} */
+
+/* .header{
+  background-color: var(--background-color);
+  position: fixed;
+  width: 100%;
+} */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:var(--background-color); /* Add your desired background color */
+  z-index: 1000; /* Ensure the header is above other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for better visibility */
+}
+nav {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0rem 1.6rem;
+}
+nav ul li a {
+  color: var(--title3);
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: var(--title4);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.4s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* .about-details{
+    display:flex;
+    margin:20px 0 40px;
+}
+.about-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.about-links::after{
+    content:'';
+    width:0;
+    height: 3px;
+    background: var(--title4);
+    position: absolute;
+    left:0;
+    bottom:-8px;
+    transition:0.4s;
+}
+.about-links.active-link::after{
+    width:60%;
+} */
+
+/* contact */
+.row {
+  display: flex;
+}
+.contact-left {
+  flex-basis: 35%;
+  color: white;
+  padding: 2rem 4rem;
+}
+.contact-right {
+  flex-basis: 60%;
+  padding: 3rem;
+}
+.contact-left p {
+  margin-top: 30px;
+}
+.contact-left p i {
+  color: var(--title3);
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: white;
+  display: inline-block;
+}
+.social-icons a:hover {
+  color: var(--title3);
+  transform: translateY(-5px);
+}
+.btn.btn2 {
+  display: inline-block;
+  background: var(--title4);
+}
+.contact-right form {
+  width: 80%;
+}
+form input,
+form textarea {
+  width: 80%;
+  border: 0;
+  outline: none;
+  background: #0a1625;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form .btn2 {
+  padding: 14px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.title2 {
+  /* text-align: center; */
+  color: var(--title3);
+}
+.title2 h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.btn {
+  padding: 1rem;
+  background-color: var(--title4);
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+a {
+  text-decoration: none;
+}
+
+#skills-section {
+  justify-content: center;
+  padding: 3rem 2rem 4rem 2rem;
+}
+.skills-container {
+  margin: 1.5rem;
+}
+.skills-sub-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.skill-card {
+  justify-content: center;
+  background-color: white;
+  border: 2px solid var(--title4);
+  border-radius: 6px;
+  margin: 1rem;
+  padding: 1rem;
+}
+.sub-title {
+  font-size: 2rem;
+  color: var(--background-color);
+  font-weight: bold;
+  font-family: "Protest Riot", sans-serif;
+  text-align: center;
+}
+.skills-logo {
+  justify-content: center;
+  display: inherit;
+}
+.skill-logo i {
+  font-size: 4rem;
+  color: #14273f;
+  padding: 1rem 5.7rem;
+  justify-content: center;
+}
+.desc {
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+}
+#project-section {
+  justify-content: center;
+  padding: 3rem 2rem 4rem 2rem;
+}
+/* .project-container{
+    margin: 1.5rem;
+} */
+.project-sub-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.project-card {
+  justify-content: space-evenly;
+  background-color: white;
+  border: 8px solid var(--title4);
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+.project-title {
+  font-size: 1.5rem;
+  color: var(--background-color);
+  font-weight: bold;
+  font-family: "Protest Riot", sans-serif;
+  text-align: center;
+  padding: 1rem 0;
+}
+.project-image img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card .desc {
+  padding-bottom: 1rem;
+}
+
+.project-card:hover {
+  background-color: var(--title2);
+  transform: translateY(-8px);
+}
+.visit {
+  display: flex;
+  border: 1px solid var(--title4);
+  padding: 0.5rem;
+  justify-content: center;
+  font-family: "Protest Riot", sans-serif;
+  /* font-weight: bold; */
+}
+.visit i {
+  padding: 0rem 0.3rem;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+/* Add this media query to stack skills and projects sections on smaller screens */
+@media screen and (max-width: 600px) {
+  .skills-sub-container,
+  .project-sub-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+    padding: 2rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  /* nav .fa-solid {
+    display:block; 
+    font-size: 1.2rem;
+    color: white;
+  }
+  nav ul{
+      background: var(--title4);
+      position: fixed;
+      top:0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index:2;
+
+  }
+  nav ul li{
+      display: block;
+      margin: 25px;
+  }
+  nav ul .fa-solid{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+  } */
+}
+
+/* Add this media query to stack skills and projects sections on smaller screens */
+@media screen and (max-width: 600px) {
+  /* Other existing styles... */
+
+  nav .fa-solid {
+    display: block; 
+    font-size: 1.2rem;
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    z-index: 3; /* Ensure the bars icon is above the sidebar */
+    cursor: pointer;
+  }
+nav{
+  float: right;
+}
+  nav ul {
+    background: var(--title4);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 150px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.3s ease; /* Add transition for smoother animation */
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px 15px 25px 5px;
+
+  }
+  nav ul li a{
+    color: white;
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  
+}
+

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito+Sans:opsz,wght@6..12,300&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#landing-page" onclick="scrollToSection('landing-page')">Home</a></li>
+                    <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+                    <li><a href="#skills-section" onclick="scrollToSection('skills-section')">Skills</a></li>
+                    <li><a href="#project-section" onclick="scrollToSection('project-section')">Portfolio</a></li>
+                    <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" id="menuIcon" onclick="toggleMenu()"></i>
+            </nav>
+
+
+        </div>
+    </div>
+    <section id="landing-page">
+
+        <div class="image">
+            <img src="https://img.freepik.com/premium-photo/beautiful-girl-from-back-colored-watercolor-painting_275400-1686.jpg"
+                alt="">
+        </div>
+        <div class="heading">
+            <h1>KHUSHI JOSHI</h1>
+        </div>
+        <div class="skills">
+            <h4>Programmer </h4>
+
+            <h4>Web Developer</h4>
+        </div>
+        <div class="social-links">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="title">
+            <h3>About me</h3>
+        </div>
+        <!-- <div class="about-container"> -->
+        <div class="about-content">As a seasoned professional in the adult entertainment sector, I prioritize client satisfaction and confidentiality. I specialize in crafting personalized experiences that cater to individual preferences, ensuring both enjoyment and safety. With strong communication skills and a knack for building trust, I navigate diverse situations with ease and professionalism. Committed to ongoing self-improvement, I constantly seek out opportunities for growth within my field. My passion lies in delivering exceptional service and leaving a lasting impression on clients and colleagues alike.</div>
+
+        <!-- <div class="about-details">
+                <p class="about-links active-link">Skills</p>
+                <p class="about-links">Experience</p>
+                <p class="about-links">Education</p>
+            </div> -->
+        <!-- </div> -->
+    </section>
+
+
+    <section id="skills-section">
+        <div class="title">
+            <h3>Skills</h3>
+        </div>
+        <div class="skills-container">
+            <div class="skills-sub-container">
+                <div class="skill-card">
+                    <div class="sub-title">Python</div>
+                    <div class="skill-logo">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="desc"> Versatile, efficient programming language for various tasks. Ideal for web development, data analysis, and automation projects.</div>
+                </div>
+                <div class="skill-card">
+                    <div class="sub-title">Java</div>
+                    <div class="skill-logo">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="desc">Powerful, versatile language for building robust software. Used in web development, mobile apps, and enterprise systems.</div>
+                </div>
+                <div class="skill-card">
+                    <div class="sub-title">Front-end</div>
+                    <div class="skill-logo">
+                        <i class="fa-solid fa-file-code"></i>
+                    </div>
+                    <div class="desc">Frontend Development: Creating user interfaces with HTML, CSS, and JavaScript. Essential for designing engaging websites and interactive web applications.</div>
+                </div>
+                <div class="skill-card">
+                    <div class="sub-title">Git</div>
+                    <div class="skill-logo">
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+                    <div class="desc">Version control system for tracking changes in code. Facilitates collaboration, code management, and project organization among developers.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="project-section">
+        <div class="title">
+            <h3>Projects</h3>
+        </div>
+        <div class="project-container">
+            <div class="project-sub-container">
+                <div class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/foodie.PNG" alt="">
+                    </div>
+                    <div class="project-title">Foodies</div>
+                    <div class="desc">A platform for food enthusiasts to explore diverse cuisines and share culinary experiences. Seamlessly browse recipes, reviews, and cooking tips.</div>
+                    <div class="visit">
+                        Live Demo
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/amazonclone.PNG" alt="">
+                    </div>
+                    <div class="project-title">Amazon Clone</div>
+                    <div class="desc">An e-commerce platform resembling Amazon's interface. Users can shop for a wide range of products, read reviews, and make secure purchases.</div>
+                    <div class="visit">
+                        Live Demo
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/calculator.PNG" alt="">
+                    </div>
+                    <div class="project-title">GetCalculated</div>
+                    <div class="desc">A calculator app designed to perform all basic mathematical calculations with ease. Features a user-friendly interface and accurate results to give result.</div>
+                    <div class="visit">
+                        Live Demo
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="project-sub-container">
+                <div class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/india.PNG" alt="">
+                    </div>
+                    <div class="project-title">IndiaInsight</div>
+                    <div class="desc">An informative website offering insights into India's diverse culture, history, and traditions. Explore vibrant destinations and cultural practices of India.</div>
+                    <div class="visit">
+                        Live Demo
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/movie.PNG" alt="">
+                    </div>
+                    <div class="project-title">FlickFusion</div>
+                    <div class="desc"> A movie platform where you can discover trending movies, read reviews, and find personalized recommendations based on user preferences and viewing history.</div>
+                    <div class="visit">
+                        Live Demo
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div class="project-card">
+
+                    <div class="project-image">
+                        <img src="images/weatherapp.PNG" alt="">
+                    </div>
+                    <div class="project-title">WeatherBug</div>
+                    <div class="desc"> A weather forecasting application providing real-time updates on current weather conditions, forecasts, precipitation and humidity. Stay informed about local weather patterns.</div>
+                    <div class="visit">
+                        Live Demo
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <div class="title2">
+                        <h3>Contact Me</h3>
+                    </div>
+                    <p><i class="fas fa-paper-plane"></i>joshikhushi000@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>8527890086</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Write your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+
+        // var sidemenu=document.getElementById("sidemenu");
+
+        // function openmenu(){
+        //     sidemenu.style.right="0";
+        // }
+        // function closemenu(){
+        //     sidemenu.style.right="200px";
+        // }
+
+
+        // function toggleMenu() {
+        //     var sidemenu = document.getElementById("sidemenu");
+        //     var menuIcon = document.querySelector("nav .fa-bars");
+
+        //     if (sidemenu.style.right === "0px") {
+        //         sidemenu.style.right = "-200px";
+        //     } else {
+        //         sidemenu.style.right = "0";
+        //     }
+        // }
+
+
+        function toggleMenu() {
+            var sidemenu = document.getElementById("sidemenu");
+            var menuIcon = document.querySelector("nav .fa-bars");
+
+            if (sidemenu.style.right === "0px") {
+                sidemenu.style.right = "-200px";
+            } else {
+                sidemenu.style.right = "0";
+            }
+        }
+
+        // function scrollToSection(sectionId) {
+        //     var section = document.querySelector(sectionId);
+        //     section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // }
+
+        // document.querySelectorAll("#sidemenu li a").forEach(function (item) {
+        //     item.addEventListener("click", function (event) {
+        //         var targetSection = event.target.getAttribute("href");
+        //         scrollToSection(targetSection);
+        //         toggleMenu(); // Close the menu after clicking a nav bar item
+        //         event.preventDefault(); // Prevent default link behavior
+        //     });
+        // });
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
